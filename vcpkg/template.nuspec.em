@@ -1,16 +1,15 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ros-dashing-orocos-kdl</id>
-    <version>3.2.0</version>
-    <title>ros-dashing-orocos-kdl</title>
-    <authors>Ruben Smits</authors>
+    <id>@(Package)</id>
+    <version>@(Version)</version>
+    <title>@(Package)</title>
+    <authors>@(Authors)</authors>
     <owners>OSRF</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This package contains a recent version of the Kinematics and Dynamics Library (KDL), distributed by the Orocos Project.</description>
+    <description>@(Description)</description>
     <dependencies>
-			<dependency id="ros-dashing-ros-workspace"/>
-
+@[for d in Depends]@(d)@[end for]
     </dependencies>
   </metadata>
   <files>
